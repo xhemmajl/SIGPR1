@@ -40,7 +40,9 @@ namespace VigenereCipher
 
         private void btnDekripto_Click(object sender, EventArgs e)
         {
-
+            string ciphertexti = lblrezultati.Text;
+            string celesi = txtCelesi.Text;
+            lblrezultati.Text = Dekripto(ciphertexti, celesi);
         }
         private string Dekripto(string ciphertexti, string celesi)
         {
