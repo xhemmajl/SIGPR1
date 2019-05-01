@@ -37,5 +37,10 @@ namespace VigenereCipher
             }
             return ciphertexti;
         }
+
+        private void btnDekripto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -64,6 +64,7 @@
             this.btnDekripto.TabIndex = 24;
             this.btnDekripto.Text = "Dekripto";
             this.btnDekripto.UseVisualStyleBackColor = false;
+            this.btnDekripto.Click += new System.EventHandler(this.btnDekripto_Click);
             // 
             // btnEnkripto
             // 
