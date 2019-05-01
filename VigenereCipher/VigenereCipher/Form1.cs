@@ -16,5 +16,24 @@ namespace VigenereCipher
         {
             InitializeComponent();
         }
+
+        private void btnEnkripto_Click(object sender, EventArgs e)
+        {
+
+        }
+        private string Enkripto(string plaintexti, string celesi)
+        {
+            string ciphertexti = "";
+            char[] keys = celesi.ToCharArray();
+            int x = 0;
+            for (int i = 0; i < plaintexti.Length; i++)
+            {
+                int p = plaintexti[i] - 97;
+                int k = keys[x] - 97;
+                ciphertexti += Convert.ToChar(((p + k) % 26) + 97);
+                x = (x + 1) % celesi.Length;
+            }
+            return ciphertexti;
+        }
     }
 }
