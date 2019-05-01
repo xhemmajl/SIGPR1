@@ -42,5 +42,20 @@ namespace VigenereCipher
         {
 
         }
+        private string Dekripto(string ciphertexti, string celesi)
+        {
+
+            int cunt = 0;
+            string decryption = "";
+            char[] keys = celesi.ToCharArray();
+            for (int i = 0; i < ciphertexti.Length; i++)
+            {
+                int c = ciphertexti[i] - 97;
+                int k = celesi[cunt] - 97;
+                decryption += Convert.ToChar(((c - k + 26) % 26) + 97);
+                cunt = (cunt + 1) % keys.Length;
+            }
+            return decryption;
+        }
     }
 }
