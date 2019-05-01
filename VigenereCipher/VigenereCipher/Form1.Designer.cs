@@ -147,7 +147,7 @@
             this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Lime;
-            this.label5.Location = new System.Drawing.Point(12, 9);
+            this.label5.Location = new System.Drawing.Point(8, 28);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(415, 30);
             this.label5.TabIndex = 27;
@@ -158,7 +158,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 484);
+            this.BackColor = System.Drawing.Color.LimeGreen;
+            this.ClientSize = new System.Drawing.Size(636, 484);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblrezultati);
             this.Controls.Add(this.label3);
@@ -170,7 +171,7 @@
             this.Controls.Add(this.txtCelesi);
             this.Controls.Add(this.txtPlaintexti);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "VigenereCipher";
             this.ResumeLayout(false);
             this.PerformLayout();
 
