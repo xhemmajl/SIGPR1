@@ -19,7 +19,9 @@ namespace VigenereCipher
 
         private void btnEnkripto_Click(object sender, EventArgs e)
         {
-
+            string plaintexti = txtPlaintexti.Text;
+            string celesi = txtCelesi.Text;
+            lblrezultati.Text = Enkripto(plaintexti, celesi);
         }
         private string Enkripto(string plaintexti, string celesi)
         {
